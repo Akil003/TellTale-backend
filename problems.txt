@@ -1,0 +1,5 @@
+ENOBUFS
+my buffer has grown too large and my system's memory can no longer handle the buffer's size
+-try throttled queue
+
+use promise wrapper around forEach
