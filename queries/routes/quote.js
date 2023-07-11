@@ -1,4 +1,4 @@
-const fs = require('node:fs')
+const fs = require('fs')
 const router = require('express').Router()
 
 function getRandom(arr){
