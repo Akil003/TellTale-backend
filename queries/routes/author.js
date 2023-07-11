@@ -1,8 +1,6 @@
 const connection = require('../../utils/connection')
 const router = require('express').Router()
 const escapeRegex = require('../utils/escapeRegex')
-const { } = require('../../')
-const fs = require('node:fs')
 const {readJSONFile} = require('../utils/ReadWriteJSON')
 
 const NUM_DOC_DEFAULT = 100
