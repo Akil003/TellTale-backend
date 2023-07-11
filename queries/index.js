@@ -9,6 +9,7 @@ const period = require('./routes/period')
 const titles = require('./routes/titles')
 const quote = require('./routes/quote')
 const getByID = require('./getBookByID')
+const banner = require('./routes/banner')
 
 router.use('/search', search)
 router.use('/genre', genre)
@@ -19,5 +20,6 @@ router.use('/period', period)
 router.use('/titles', titles)
 router.use('/quote', quote)
 router.use('/id', getByID)
+router.use('/banner', banner)
 
 module.exports = router
