@@ -10,7 +10,7 @@ const cors = require('cors')
 const query = require('./queries/index')
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://telltale.onrender.com']
+    origin: ['http://localhost:3000', 'https://telltale.onrender.com', '*']
 
 }))
 app.use('/query', query)
