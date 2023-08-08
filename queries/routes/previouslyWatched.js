@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
         return res.status(200).json([])
     }
 
-    return res.status(200).json(record)
+    return res.status(200).json(record.ebooks)
 })
 
 module.exports = router
