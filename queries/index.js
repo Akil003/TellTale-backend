@@ -10,6 +10,7 @@ const titles = require('./routes/titles')
 const quote = require('./routes/quote')
 const getByID = require('./getBookByID')
 const banner = require('./routes/banner')
+const ids = require('./routes/ids')
 
 router.use('/search', search)
 router.use('/genre', genre)
@@ -21,5 +22,6 @@ router.use('/titles', titles)
 router.use('/quote', quote)
 router.use('/id', getByID)
 router.use('/banner', banner)
+router.use('/ids', ids)
 
 module.exports = router
