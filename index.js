@@ -8,6 +8,7 @@ app.use(compression())
 const cors = require('cors')
 
 const query = require('./queries/index')
+const record = require('./record/index')
 
 app.use(cors({
     origin: '*'
@@ -15,7 +16,7 @@ app.use(cors({
 }))
 app.use('/query', query)
 
-app.post('/watched', )
+app.post('/watched', record)
 
 app.use('/api/feed/audiobooks', createProxyMiddleware({
     target: 'https://librivox.org',
