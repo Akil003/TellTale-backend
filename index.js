@@ -16,7 +16,7 @@ app.use(cors({
 }))
 app.use('/query', query)
 
-app.post('/watched', record)
+app.use('/watched', record)
 
 app.use('/api/feed/audiobooks', createProxyMiddleware({
     target: 'https://librivox.org',
