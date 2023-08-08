@@ -27,9 +27,9 @@ router.post('/', async (req, res) => {
                 { _id: email },
                 { $push: { audiobooks: audiobook } }
             );
-            send('Audiobook added to existing email');
+            return send('Audiobook added to existing email');
         } else {
-            send('Audiobook ID already exists for this email');
+            return send('Audiobook ID already exists for this email');
         }
     } else {
         // Email doesn't exist, create a new document
@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
             _id: email,
             audiobooks: [audiobook]
         });
-        send('New email and audiobook added');
+        return send('New email and audiobook added');
     }
 })
 
